@@ -11,7 +11,7 @@ textarea {
 .field-validation-error {
     color:#f00;
 }
-.validation-summary-errors {
+.error {
     font-weight:bold;
     color:#f00;
 }

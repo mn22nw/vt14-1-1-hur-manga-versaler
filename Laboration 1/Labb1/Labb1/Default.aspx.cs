@@ -41,7 +41,7 @@ namespace Labb1
            
             TextArea1.Disabled = false;
             TextArea1.InnerHtml = "";
-
+            Compute.CssClass = "button";
         }
     }
 }
