@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Labb1.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Labb1.Default" ViewStateMode="Disabled" %>
 
 <!DOCTYPE html>
 
@@ -15,11 +15,12 @@
         
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="validation-summary-errors" />
             <textarea id="TextArea1" cols="20" rows="2" runat="server"></textarea>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Textfältet får inte vara tomt." Display="Dynamic" ControlToValidate="TextArea1"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Textfältet får inte vara tomt." Display="Dynamic" ControlToValidate="TextArea1" CssClass="nodisplay" ></asp:RequiredFieldValidator>
       
       
             <asp:Button ID="Compute" runat="server" Text="Beräkna antalet versaler" OnClick="Compute_Click"  CssClass="button" />
             <asp:Label ID="Result" runat="server" Text=""></asp:Label>
+            <asp:Button ID="Clear" runat="server" Text="Rensa" CssClass="nodisplay" OnClick="Clear_Click" />
         </div>
         </form>
     </div>

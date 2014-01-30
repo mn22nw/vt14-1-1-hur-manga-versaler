@@ -20,12 +20,28 @@ namespace Labb1
             {
                 var valueText = TextArea1.InnerHtml;
 
+                TextArea1.Disabled = true;
 
+                Compute.CssClass = "remove";
 
+             //   Button buttonClear = new Button();
+             //   buttonClear.Text = "Rensa";
+            //    Page.Form.Controls.Add(buttonClear);
+            //    buttonClear.CssClass = "clearButton";
+
+                Clear.CssClass = "clearButton";
                 var numberOfCapitals = Model.TextAnalyzer.GetNumberOfCapitals(valueText);
 
-                Result.Text = numberOfCapitals.ToString();
+                Result.Text = "Texten innehåller " + numberOfCapitals.ToString() + " versaler";
             }
+        }
+
+        protected void Clear_Click(object sender, EventArgs e)
+        {
+           
+            TextArea1.Disabled = false;
+            TextArea1.InnerHtml = "";
+
         }
     }
 }

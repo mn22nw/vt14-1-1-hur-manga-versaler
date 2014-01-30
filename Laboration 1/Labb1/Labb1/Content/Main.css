@@ -28,3 +28,22 @@ h1 {
     height:60px;
     border-radius:5px;
 }
+.nodisplay {
+    display:none;
+}
+
+#Result{ margin-top:40px; display:block;
+         font-size:1.5em;
+}
+
+.remove {
+        display:none;
+}
+.clearButton {
+    display:block;
+    width:100px;
+    background-color:#bee9ff;
+    height:60px;
+    border-radius:5px;
+    margin-top:40px;
+}
