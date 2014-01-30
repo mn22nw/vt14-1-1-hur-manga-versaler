@@ -19,7 +19,7 @@ namespace Labb1.Model
 
                     upperCase += 1;
             }
-
+            Console.WriteLine(upperCase);
             return upperCase;
         }
     }

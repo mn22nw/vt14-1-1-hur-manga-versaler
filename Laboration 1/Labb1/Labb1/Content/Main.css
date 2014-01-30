@@ -1,4 +1,11 @@
-﻿body {
+﻿#page { width: 700px;
+       height:auto !important;
+       margin:0 auto;
+}
+
+textarea {
+    width:500px;
+    height:300px;
 }
 
 .field-validation-error {
@@ -11,5 +18,13 @@
 
 h1 {
     font-size:2.2em;
-    color:red;
+    color:#000;
+}
+
+.button {
+    display:block;
+    width:200px;
+    background-color:#bee9ff;
+    height:60px;
+    border-radius:5px;
 }

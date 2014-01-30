@@ -18,13 +18,13 @@ namespace Labb1
         {
             if (IsValid)
             {
-                var op1 = int.Parse(Op1.Text);
-                var op2 = int.Parse(Op2.Text);
-                var sum = op1 + op2;
+                var valueText = TextArea1.InnerHtml;
 
-                Result.Text = sum.ToString();
 
-                Model.TextAnalyzer.GetNumberOfCapitals(Result.Text);
+
+                var numberOfCapitals = Model.TextAnalyzer.GetNumberOfCapitals(valueText);
+
+                Result.Text = numberOfCapitals.ToString();
             }
         }
     }
